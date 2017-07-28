@@ -1,24 +1,45 @@
-.App {
+.title {
   text-align: center;
+  margin-top: 10px;
+  font-size: 2em;
+  font-family: 'Trebuchet MS';
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#root {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Raleway', serif;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+
+textarea {
+  width: 450px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+  resize: none;
+
+}
+textarea:focus {
+  border: 1.25px solid gray;
+  box-shadow: 0px 0px 1px gray;
+  outline: none;
+}
+textarea:disabled {
+  background-color: white;
+}
+#inputCode {
+  font-family: 'PT Mono', monospace;
 }
 
-.App-intro {
-  font-size: large;
+#outputCode {
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.copyright {
+  font-family: 'Trebuchet MS';
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.5em;
 }
